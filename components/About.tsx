@@ -12,12 +12,11 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a Masters in{" "}
-        <span className="font-medium">Computer Science</span>, I joined InfoEdge as a Software Engineer Intern.
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
+        As part of my Masters in{" "}
+        <span className="font-medium">Computer Science</span>, I joined InfoEdge as a Software Engineer Intern in the last semester.{" "}
+        <span className="italic">I was offered a full-time position</span> as a Software Engineer after my internship ended. I will be joining InfoEdge in October 2023.{" "}
+        <span className="italic">My <span className="underline">favorite</span> part of programming</span> is the
+        problem-solving aspect. My core stack
         is{" "}
         <span className="font-medium">
           React, Next.js, Springboot, MySQL
@@ -26,6 +25,13 @@ export default function About() {
         learn new technologies. I am currently looking for some{" "}
         <span className="font-medium">part-time work</span> as a software
         developer.
+      </p>
+
+      <p>
+        <span className="italic">When I'm not coding</span>, I enjoy exercising, watching movies, and spending time with my family and friends. I also enjoy{" "}
+        <span className="font-medium">learning new things</span>. I am currently
+        learning how to {" "}
+        <span className="font-medium">play the guitar</span>.
       </p>
 
     </motion.section>

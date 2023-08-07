@@ -2,9 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import thoughtboardImg from "@/public/thoughtboard.png";
+import collegeNoticeBotImg from "@/public/college_notice_bot.png";
+import uazoImg from "@/public/uazo.png";
+import carShowcaseImg from "@/public/car_showcase.png";
 
 export const links = [
   {
@@ -33,56 +34,73 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const projectsData = [
+
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Factory Floor QA Application",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "A full stack solution to track quality of manufactured products in a textile factory. Developed dashboard, app, and backend API.",
+    tags: ["React", "Django", "Flutter"],
+    links: [
+      {
+        name: "Demo",
+        url: "https://uazo.mukulsingh.in",
+      },
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/uazo_dashboard",
+      }
+    ],
+    imageUrl: uazoImg,
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Car Showcase",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "A Demo Website built with Next.js. The website allows for quick searching of cars based on their make and model and provides the user with the details of the car.",
+    tags: ["React", "Next.js", "Tailwind"],
+    links: [
+      {
+        name: "Demo",
+        url: "https://cars.mukulsingh.in/",
+      },
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/car_showcase",
+      }
+    ],
+    imageUrl: carShowcaseImg,
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "College Notice Bot",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "A Django Bot for telegram which scraps the college website every 10 mins and sends any new notices to a telegram channel.",
+    tags: ["Django", "Telegram"],
+    links: [
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/dsc_notice_bot",
+      },
+      {
+        name: "Telegram Channel",
+        url: "https://t.me/dyalsinghcollege",
+      },
+    ],
+    imageUrl: collegeNoticeBotImg,
+  },
+  {
+    title: "Thought Board DUCS",
+    description:
+      "Open Chat Flutter Application for intradepartmental communications for Department of Computer Science, University of Delhi.",
+    tags: ["Flutter", "Firebase"],
+    links: [
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/ThoughtBoard-DUCS",
+      }
+    ],
+    imageUrl: thoughtboardImg,
   },
 ] as const;
-
-// export const projectsData = [
-//   {
-//     title: "CorpComment",
-//     description:
-//       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-//     imageUrl: corpcommentImg,
-//   },
-//   {
-//     title: "rmtDev",
-//     description:
-//       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-//     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-//     imageUrl: rmtdevImg,
-//   },
-//   {
-//     title: "Word Analytics",
-//     description:
-//       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-//     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-//     imageUrl: wordanalyticsImg,
-//   },
-// ] as const;
 
 export const skillsData = [
   "HTML",
@@ -94,14 +112,7 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
   "PostgreSQL",
   "Python",
   "Django",
-  "Framer Motion",
 ] as const;
