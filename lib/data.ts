@@ -2,10 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import thoughtboardImg from "@/public/thoughtboard.png";
-import collegeNoticeBotImg from "@/public/college_notice_bot.png";
+import thoughtboardImg from "@/public/thoughtboard.jpeg";
+import collegeNoticeBotImg from "@/public/college_notice_bot.jpg";
 import uazoImg from "@/public/uazo.png";
-import carShowcaseImg from "@/public/car_showcase.png";
+import carShowcaseImg from "@/public/car_showcase.jpg";
 
 export const links = [
   {
