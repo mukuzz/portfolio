@@ -1,7 +1,5 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import thoughtboardImg from "@/public/thoughtboard.jpeg";
 import collegeNoticeBotImg from "@/public/college_notice_bot.jpg";
 import uazoImg from "@/public/uazo.png";
@@ -116,3 +114,20 @@ export const skillsData = [
   "HTML",
   "CSS"
 ] as const;
+
+export const experienceData = [
+  {
+    title: "Software Engineer Intern",
+    company: "Infoedge",
+    date: 2023,
+    description: "Implemented the Service Aggregator design pattern in a micro-services architecture. Optimized parallel execution of multiple interdependent services, including exception handling and alerting for errors from various external services.",
+    icon: React.createElement(CgWorkAlt)
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Ekaisoft",
+    date: 2021,
+    description: "Contributed in building an api server in Golang using Gin framework. Implemented OTP delivery system for the login api endpoint and a JWT based authentication system.",
+    icon: React.createElement(CgWorkAlt)
+  }
+]
