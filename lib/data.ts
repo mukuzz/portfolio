@@ -1,6 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import thoughtboardImg from "@/public/thoughtboard.jpeg";
+import taxVisualisedImg from "@/public/tax-visualised.png";
 import collegeNoticeBotImg from "@/public/college_notice_bot.jpg";
 import uazoImg from "@/public/uazo.png";
 import carShowcaseImg from "@/public/car_showcase.jpg";
@@ -11,20 +12,12 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Projects",
     hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -50,6 +43,32 @@ export const projectsData = [
       }
     ],
     imageUrl: uazoImg,
+  },
+  {
+    title: "Thought Board DUCS",
+    description:
+      "Open Chat Flutter Application for intradepartmental communications for Department of Computer Science, University of Delhi.",
+    tags: ["Flutter", "Firebase"],
+    links: [
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/ThoughtBoard-DUCS",
+      }
+    ],
+    imageUrl: thoughtboardImg,
+  },
+  {
+    title: "Income Tax Visualised",
+    description:
+      "Simple web app to visualise actual icnome tax percentage at various income levels in india.",
+    tags: ["Html", "js"],
+    links: [
+      {
+        name: "Demo",
+        url: "https://mukuzz.github.io/tax-visualised/",
+      }
+    ],
+    imageUrl: taxVisualisedImg,
   },
   {
     title: "Car Showcase",
@@ -85,34 +104,6 @@ export const projectsData = [
     ],
     imageUrl: collegeNoticeBotImg,
   },
-  {
-    title: "Thought Board DUCS",
-    description:
-      "Open Chat Flutter Application for intradepartmental communications for Department of Computer Science, University of Delhi.",
-    tags: ["Flutter", "Firebase"],
-    links: [
-      {
-        name: "Source Code",
-        url: "https://github.com/mukuzz/ThoughtBoard-DUCS",
-      }
-    ],
-    imageUrl: thoughtboardImg,
-  },
-] as const;
-
-export const skillsData = [
-  "React",
-  "Next.js",
-  "Springboot",
-  "Git",
-  "Tailwind",
-  "SQL",
-  "Flutter",
-  "Python",
-  "Django",
-  "TypeScript",
-  "HTML",
-  "CSS"
 ] as const;
 
 export const experienceData = [

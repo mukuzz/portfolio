@@ -45,8 +45,8 @@ export default function Intro() {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
       >
-        <strong>{`Hello, I'm Mukul Singh. `}</strong>
-        {`I'm, a `}<strong>full-stack developer</strong> with <strong>1 year</strong> experience. I enjoy building <span className="italic">sites & apps</span>. My focus is <span className="underline">React (Next.js)</span>
+        Hello, I'm <strong>{`Mukul Singh`}</strong>
+        {`,`} a <span className="italic">software engineer</span> at <span className="underline"><a href="https://www.infoedge.in" target="_blank">Info Edge</a></span> (naukri.com) with <strong>2 year</strong> experience. My focus is <span className="italic">Springboot, MySQL, Kubernetes, Kafka, Aerospike</span>
       </motion.p>
 
       <motion.div className="flex flex-col sm:flex-row gap-2 items-center justify-center px-4 font-medium"
