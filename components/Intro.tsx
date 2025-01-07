@@ -45,7 +45,7 @@ export default function Intro() {
         initial={{ y: 100 }}
         animate={{ y: 0 }}
       >
-        Hello, I'm <strong>{`Mukul Singh`}</strong>
+        Hello, I{`'`}m <strong>{`Mukul Singh`}</strong>
         {`,`} a <span className="italic">software engineer</span> at <span className="underline"><a href="https://www.infoedge.in" target="_blank">Info Edge</a></span> (naukri.com) with <strong>2 year</strong> experience. My focus is <span className="italic">Springboot, MySQL, Kubernetes, Kafka, Aerospike</span>
       </motion.p>
 
