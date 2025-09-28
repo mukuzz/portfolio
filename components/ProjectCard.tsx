@@ -6,8 +6,8 @@ export default function ProjectCard({ project, onOpen }: { project: Project; onO
   const { title, description, tags, links } = project
 
   return (
-    <div className="mb-8 w-full max-w-[42rem] rounded-lg border border-black/5 bg-white p-6 shadow-sm">
-      <button type="button" className="w-full text-left" onClick={() => onOpen(project)}>
+    <div className="mb-8 w-full max-w-[42rem] rounded-lg border border-black/5 bg-gray-100 p-6 shadow-sm cursor-pointer" onClick={() => onOpen(project)}>
+      <div className="w-full text-left">
         <h3 className="text-2xl font-semibold">{title}</h3>
         <p className="mt-3 leading-relaxed text-gray-700">{description}</p>
 
@@ -21,13 +21,13 @@ export default function ProjectCard({ project, onOpen }: { project: Project; onO
             </li>
           ))}
         </ul>
-      </button>
+      </div>
 
       <div className="mt-6 flex flex-wrap gap-3">
         {links.map(link => (
           <a
             key={link.url}
-            className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+            className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 bg-white hover:bg-gray-200"
             href={link.url}
             target="_blank"
             rel="noreferrer"
@@ -39,7 +39,7 @@ export default function ProjectCard({ project, onOpen }: { project: Project; onO
 
         <button
           type="button"
-          className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+          className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 bg-white hover:bg-gray-200"
           onClick={() => onOpen(project)}
         >
           View Images

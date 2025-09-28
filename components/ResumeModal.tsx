@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react"
 
 import { HiDownload } from "react-icons/hi"
 
-const dialogStyles = "fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
-const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl"
+const dialogStyles = "fixed inset-0 flex items-center justify-center px-4"
+const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-200"
 
 export default function ResumeModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const iframeRef = useRef<HTMLIFrameElement>(null)
@@ -58,7 +58,7 @@ export default function ResumeModal({ open, onClose }: { open: boolean; onClose:
           <h2 id="resume-modal-title" className="text-lg font-semibold text-gray-900">Resume</h2>
           <div className="flex items-center gap-3">
             <a
-              className="flex items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+              className="flex items-center gap-2 rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-200"
               href="/MukulSingh-Resume.pdf"
               download
             >
@@ -67,7 +67,7 @@ export default function ResumeModal({ open, onClose }: { open: boolean; onClose:
             </a>
             <button
               type="button"
-              className="rounded-full border border-black/10 px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
+              className="rounded-full border border-black/10 px-3 py-1 text-sm text-gray-700 hover:bg-gray-200"
               onClick={onClose}
             >
               Close

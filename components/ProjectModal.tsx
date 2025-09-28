@@ -5,8 +5,8 @@ import { useEffect } from "react"
 
 import type { Project } from "@/lib/data"
 
-const dialogStyles = "fixed inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm px-4"
-const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-xl"
+const dialogStyles = "fixed inset-0 flex items-center justify-center px-4"
+const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-xl border border-gray-200"
 const gridStyles = "mt-6 grid gap-4"
 
 export default function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
@@ -62,7 +62,7 @@ export default function ProjectModal({ project, onClose }: { project: Project | 
               ))}
             </ul>
           </div>
-          <button type="button" className="rounded-full border border-black/10 px-3 py-1 text-sm text-gray-600" onClick={onClose}>
+          <button type="button" className="rounded-full border border-black/10 px-3 py-1 text-sm text-gray-600 bg-white hover:bg-gray-200" onClick={onClose}>
             Close
           </button>
         </div>
@@ -95,7 +95,7 @@ export default function ProjectModal({ project, onClose }: { project: Project | 
           {links.map(link => (
             <a
               key={link.url}
-              className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100"
+              className="rounded-full border border-black/10 px-4 py-2 text-sm font-medium text-gray-700 bg-white hover:bg-gray-200"
               href={link.url}
               target="_blank"
               rel="noreferrer"
