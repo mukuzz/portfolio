@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Mukul Singh | Personal Portfolio',
-  description: 'Full Stack Developer with 2 year experience',
+  description: 'Full Stack Engineer with 3 year experience',
   manifest: 'site.webmanifest',
   openGraph: { images: [{ url: "mukul.jpeg" }] }
 }
