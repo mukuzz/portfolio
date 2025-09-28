@@ -1,26 +1,23 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import thoughtboardImg from "@/public/thoughtboard.jpeg";
 import taxVisualisedImg from "@/public/tax-visualised.png";
-import uazoImg from "@/public/uazo.png";
-
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-] as const;
+import uazoImg1 from "@/public/uazo1.png";
+import uazoImg2 from "@/public/uazo2.png";
+import uazoImg3 from "@/public/uazo3.png";
 
 export const projectsData = [
 
+  {
+    title: "AI Expense Tracker",
+    description:
+      "An AI agent that processes emails containing bank transactions, credit card transactions, and statements to keep track of your expenses.",
+    tags: ["Spring Boot", "React.js", "Prompt Engineering", "MCP"],
+    links: [
+      {
+        name: "Source Code",
+        url: "https://github.com/mukuzz/myfi",
+      }
+    ],
+    images: [],
+  },
   {
     title: "Income Tax Visualised",
     description:
@@ -32,53 +29,27 @@ export const projectsData = [
         url: "https://mukuzz.github.io/tax-visualised/",
       }
     ],
-    imageUrl: taxVisualisedImg,
+    images: [taxVisualisedImg],
   },
   {
     title: "Factory Floor QA Application",
     description:
       "A full stack solution to track quality of manufactured products in a textile factory. Developed dashboard, app, and backend API.",
-    tags: ["React", "Django", "Flutter"],
+    tags: ["React.js", "Django", "Flutter"],
     links: [
       {
-        name: "Demo",
-        url: "https://uazo.mukulsingh.in",
+        name: "Source Code - Dashboard",
+        url: "https://github.com/mukuzz/uazo_dashboard",
       },
       {
-        name: "Source Code",
-        url: "https://github.com/mukuzz/uazo_dashboard",
+        name: "Source Code - Backend",
+        url: "https://github.com/mukuzz/uazo_backend",
       }
     ],
-    imageUrl: uazoImg,
-  },
-  {
-    title: "Thought Board DUCS",
-    description:
-      "Open Chat Flutter Application for intradepartmental communications for Department of Computer Science, University of Delhi.",
-    tags: ["Flutter", "Firebase"],
-    links: [
-      {
-        name: "Source Code",
-        url: "https://github.com/mukuzz/ThoughtBoard-DUCS",
-      }
-    ],
-    imageUrl: thoughtboardImg,
+    images: [uazoImg1, uazoImg2 , uazoImg3],
   }
 ] as const;
 
-export const experienceData = [
-  {
-    title: "Software Engineer Intern",
-    company: "Infoedge",
-    date: 2023,
-    description: "Implemented the Service Aggregator design pattern in a micro-services architecture. Optimized parallel execution of multiple interdependent services, including exception handling and alerting for errors from various external services.",
-    icon: React.createElement(CgWorkAlt)
-  },
-  {
-    title: "Software Engineer Intern",
-    company: "Ekaisoft",
-    date: 2021,
-    description: "Contributed in building an api server in Golang using Gin framework. Implemented OTP delivery system for the login api endpoint and a JWT based authentication system.",
-    icon: React.createElement(CgWorkAlt)
-  }
-]
+export const experienceData = []
+
+export type Project = typeof projectsData[number]

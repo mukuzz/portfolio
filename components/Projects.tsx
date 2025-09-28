@@ -1,19 +1,25 @@
 "use client"
 
-import { projectsData } from "@/lib/data";
-import SectionHeading from "./SectionHeading";
-import ProjectCard from "./ProjectCard";
-import { useSectionInView } from "@/lib/hooks";
+import { useState } from "react"
+
+import { projectsData, type Project } from "@/lib/data"
+import SectionHeading from "./SectionHeading"
+import ProjectCard from "./ProjectCard"
+import ProjectModal from "./ProjectModal"
 
 export default function Projects() {
-  const ref = useSectionInView("Projects", 0.25)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section id="projects" className="mb-28">
       <SectionHeading>My Projects</SectionHeading>
-      {projectsData.map((project, index) => (
-        <ProjectCard {...project} key={index} />
+      {projectsData.map((project) => (
+        <ProjectCard project={project} key={project.title} onOpen={setSelectedProject} />
       ))}
+
+      {selectedProject && (
+        <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
     </section>
   )
 }
