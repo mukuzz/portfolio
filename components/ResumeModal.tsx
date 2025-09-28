@@ -77,7 +77,7 @@ export default function ResumeModal({ open, onClose }: { open: boolean; onClose:
 
         <iframe
           ref={iframeRef}
-          src="/MukulSingh-Resume.pdf"
+          src="/MukulSingh-Resume.pdf#view=FitH"
           className="h-[75vh] w-full"
           title="Mukul Singh Resume"
         />
