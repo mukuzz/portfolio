@@ -14,7 +14,7 @@ export default function ProjectCard({ project, onOpen }: { project: Project; onO
         <ul className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <li
-              className="rounded-full bg-black/[0.75] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white"
+              className="rounded-full bg-black/[0.75] px-3 py-1 text-[0.7rem] tracking-wider text-white"
               key={index}
             >
               {tag}

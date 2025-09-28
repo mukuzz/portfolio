@@ -56,7 +56,7 @@ export default function ProjectModal({ project, onClose }: { project: Project | 
             <p className="mt-2 text-gray-600">{description}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {tags.map((tag, index) => (
-                <li key={index} className="rounded-full bg-black/[0.75] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white">
+                <li key={index} className="rounded-full bg-black/[0.75] px-3 py-1 text-[0.7rem] tracking-wider text-white">
                   {tag}
                 </li>
               ))}

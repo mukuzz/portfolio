@@ -22,7 +22,7 @@ export const projectsData = [
     title: "Income Tax Visualised",
     description:
       "Simple web app to visualise actual icnome tax percentage at various income levels in india.",
-    tags: ["Html", "js"],
+    tags: ["HTML", "JavaScript"],
     links: [
       {
         name: "Demo",
