@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react"
 import { HiDownload } from "react-icons/hi"
 
 const dialogStyles = "fixed inset-0 flex items-center justify-center px-4"
-const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl border border-gray-200"
+const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-2xl shadow-black border border-gray-200"
 
 export default function ResumeModal({ open, onClose }: { open: boolean; onClose: () => void }) {
   const iframeRef = useRef<HTMLIFrameElement>(null)

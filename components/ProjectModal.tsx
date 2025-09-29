@@ -6,7 +6,7 @@ import { useEffect } from "react"
 import type { Project } from "@/lib/data"
 
 const dialogStyles = "fixed inset-0 flex items-center justify-center px-4"
-const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-xl border border-gray-200"
+const panelStyles = "max-h-[90vh] w-full max-w-4xl overflow-y-auto rounded-2xl bg-white p-6 shadow-2xl shadow-black border border-gray-200"
 const gridStyles = "mt-6 grid gap-4"
 
 export default function ProjectModal({ project, onClose }: { project: Project | null; onClose: () => void }) {
